@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.scss";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 
@@ -20,30 +20,30 @@ const Navbar = () => {
         </div>
 
         <div className="nav-items">
-          <Link to="/" className="nav-item" onClick={() => setToggle(false)}>
+          <NavLink to="/" className="nav-item" onClick={() => setToggle(false)}>
             Home
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/quote"
-            className="nav-item"
             onClick={() => setToggle(false)}
+            className="nav-item"
           >
             Quote Generator
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/joke"
             className="nav-item"
             onClick={() => setToggle(false)}
           >
             Joke Generator
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/trivia"
             className="nav-item"
             onClick={() => setToggle(false)}
           >
             Trivia Generator
-          </Link>
+          </NavLink>
         </div>
       </div>
     </>

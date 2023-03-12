@@ -3,10 +3,10 @@ import classes from "./Home.module.scss";
 const Home = () => {
   return (
     <div className={classes.container}>
-          <img src="./logo.png"></img>
-          <h1>WELCOME TO APIHuB</h1>
-          <h2>A hub of various API in a single website to generate jokes, facts and many more! </h2>
-          <button >Get Started!</button>
+      {/* <img src="./logo.png"></img> */}
+      <h1>WELCOME TO APIHUB</h1>
+      <h2>A hub of various API to generate jokes, facts and many more! </h2>
+      <button>Get Started!</button>
     </div>
   );
 };

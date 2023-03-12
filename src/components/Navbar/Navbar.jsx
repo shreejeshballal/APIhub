@@ -15,7 +15,7 @@ const Navbar = () => {
       />
       <div className={`${toggle ? "navbar" : "navbar dead"}`}>
         <div className="top-bar">
-          <div className="title">APIHuB</div>
+          <div className="title">APIHUB</div>
           <GrClose className="close" onClick={() => setToggle(false)} />
         </div>
 
